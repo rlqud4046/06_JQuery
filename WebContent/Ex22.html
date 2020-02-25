@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+
+        // val() / val(값) : 입력 요소에 있는 value 값을 불러오거나 변경할 때 사용
+
+        $(function(){
+            $("#my_name").val($("#user_name").val());
+            alert($("#my_name").val())
+
+        })
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <p>
+        <input type="text" name="user_name" id="user_name" value="홍길동"> 
+    </p>
+
+    <p>
+        <input type="text" name="my_name" id="my_name"> 
+    </p>
+
+
+
+
+
+
+</body>
+
+</html>
