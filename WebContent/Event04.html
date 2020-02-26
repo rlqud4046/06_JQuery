@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        /*
+        mousemove() : 선택한 요소의 영역에서 마우스를 움직일 때 마다 이벤트 발생.
+        형식) $("요소 선택").mousemove(function(참조변수 아무거나){ ... })
+         */
+         $(function(){
+            $(document).mousemove(function(a){ // a는 $안의 document를 의미
+                let x= a.pageX; // 마우스의 x좌표
+                let y= a.pageY; // 마우스의 y좌표
+                $("p").text("x : " + x + ", y : " + y);
+            })
+         })
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <p></p>
+</body>
+
+</html>

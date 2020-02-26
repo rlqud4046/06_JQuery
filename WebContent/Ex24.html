@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        /*
+                append() : 선택한 요소의 마지막 위치에 새 요소를 추가
+                형식) $("요소 선택").append("새 요소");
+                appendTo() : 선택한 요소의 마지막 위치에 새 요소를 추가
+                형식) $("새 요소").appendTo("요소 선택)");
+                prepend() : 선택한 요소의 맨 앞 위치에 새 요소를 추가
+                형식) $("요소 선택").prepend("새 요소");
+                prependTo() : 선택한 요소의 맨 앞 위치에 새 요소를 추가
+                형식) $("새 요소").prependTo("요소 선택");
+        
+         */
+
+         $(function(){
+             $(".myList").append("<li>append</li>");
+             $("<li>prependTo</li>").prependTo(".myList");
+             $("<li>새로운 내용추가2,appendTo</li>").appendTo(".myList");
+             $(".myList").prepend("<li>새로운 내용 추가1, prepend</li>");
+         })
+    </script>
+</head>
+
+<body>
+
+    <h1>객체 편집 메서드</h1>
+    <ul class="myList">
+        <li>내용</li>
+    </ul>
+
+</body>
+
+</html>
